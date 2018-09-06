@@ -1,0 +1,26 @@
+{
+  "name": "elem_backend",
+  "version": "1.0.0",
+  "description": "backend for elem",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jeanva/elem_backend.git"
+  },
+  "keywords": [
+    "elem",
+    "backend"
+  ],
+  "author": "jeanva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeanva/elem_backend/issues"
+  },
+  "homepage": "https://github.com/Jeanva/elem_backend#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
