@@ -39,6 +39,11 @@ CREATE TABLE user(
 );
 INSERT INTO user VALUES(null,'15000000000','123456','gaga');
 
+#商铺表
+-- CREATE TABLE shop_list(
+--     sid INT PRIMARY KEY AUTO_INCREMENT,
+-- );
+
 #首页推荐商铺
 CREATE TABLE index_shop(
     sid INT PRIMARY KEY AUTO_INCREMENT,
