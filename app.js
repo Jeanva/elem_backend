@@ -1,8 +1,11 @@
 const express = require("express");
+
 const home = require('./router/home');
 const login = require('./router/login');
 const shop = require('./router/shop');
 const foodlist =require('./router/foodlist');
+const register = require("./router/register");
+const orderlist = require("./router/orderlist");
 const cors = require('cors');
 
 var app =express();
@@ -24,3 +27,5 @@ app.use('/home',home);
 app.use('/login',login);
 app.use('/shop',shop);
 app.use('/foodlist',foodlist);
+app.use("/register",register);
+app.use("/orderlist",orderlist);
