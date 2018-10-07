@@ -36,7 +36,8 @@ CREATE TABLE el_user(
     uid INT PRIMARY KEY AUTO_INCREMENT,
     phone_num  VARCHAR(11),
     upwd VARCHAR(20),
-    uname  VARCHAR(20)
+    uname  VARCHAR(20),
+    gender BOOLEAN
 );
 INSERT INTO el_user VALUES(null,'15000000000','123456','gaga');
 
