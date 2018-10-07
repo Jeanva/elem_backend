@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
 const home = require('./router/home');
 const login = require('./router/login');
@@ -11,6 +12,11 @@ const orderpay = require("./router/pay");
 const cors = require('cors');
 
 var app =express();
+// // parse application/x-www-form-urlencoded
+// app.use(bodyParser.urlencoded({ extended: false }))
+// // parse application/json
+// app.use(bodyParser.json())
+
 app.listen(3001,(req,res)=>{
     console.log("服务器3001已启动");
 });

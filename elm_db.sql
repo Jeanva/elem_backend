@@ -37,7 +37,7 @@ CREATE TABLE el_user(
     phone_num  VARCHAR(11),
     upwd VARCHAR(20),
     uname  VARCHAR(20),
-    gender BOOLEAN
+    gender BOOLEAN      #2018/10/07添加
 );
 INSERT INTO el_user VALUES(null,'15000000000','123456','gaga');
 
@@ -258,9 +258,10 @@ CREATE TABLE order_list(
     sh_logo VARCHAR(255),
     o_date Date,
     o_state INT,    # 0配送中，1已送达，2取消
-    o_sum INT,
+    o_sum INT,      # 订单小计
     o_items VARCHAR(255),
-    uid
+    uid INT,    #用户Id
+    sid  INT,   #店铺id
 );
 INSERT INTO order_list VALUES(
     NULL,
