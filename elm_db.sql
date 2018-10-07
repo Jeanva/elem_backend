@@ -137,7 +137,8 @@ CREATE TABLE shop_details(
     sh_logo VARCHAR(255),
     sh_bg VARCHAR(255),
     min_charge  DECIMAL(5,2),    #起送价
-    star_rate   DECIMAL(1,1)    #星级
+    star_rate   DECIMAL(1,1),    #星级
+    manjian VARCHAR(255)        #满减
 );
 INSERT INTO shop_details VALUES(
     null,
@@ -221,6 +222,26 @@ INSERT INTO food_list VALUES(
     4.1,
     '鱼片粥，营养又美味',
     '回家吃饭的味道',
+    2,
+    1,
+    '粥',
+    1,
+    20,
+    18
+    );
+INSERT INTO food_list VALUES(
+    null,
+    '鲜肉生煎',
+    'http://127.0.0.1:3001/img/index/icon1.webp',
+    'http://127.0.0.1:3001/img/index/icon1.webp',
+    1,
+    12,
+    345,
+    true,
+    true,
+    4.1,
+    '鲜肉生煎',
+    '精心现做',
     2,
     1,
     '粥',

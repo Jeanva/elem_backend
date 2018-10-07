@@ -12,6 +12,9 @@ router.get('/',(req,res)=>{
         if(result.length>0){
             res.send({code:1,msg:result});
         }
+        else{
+            res.send({code:0,msg:"该号码未注册"});
+        }
     });
 });
 

@@ -24,7 +24,7 @@ router.post("/",(req,res)=>{
             }
             else{  
                 //如果数据库中没有当前号码，则添加成新用户
-                sql ="INSERT INTO el_user VALUES(NULL,?,?,NULL)";
+                sql ="INSERT INTO el_user VALUES(NULL,?,?,NULL,NULL)";
                 pool.query(sql,[p_num,upwd],(err,result)=>{
                     if(err){
                         throw err;
@@ -36,7 +36,6 @@ router.post("/",(req,res)=>{
         }); 
         
         // 问题1：为何此处取不到 req.body的值？
-
         // res.send(obj,"--",req.body);      
     });
 });
